@@ -1,14 +1,34 @@
- async function fetchPokemon () {
+//  let pokemonList = []
+//  async function fetchPokemon () {
+//   try {
+//     const response =await fetch ('https://pokeapi.co/api/v2/pokemon?limit=100');
+//     const data = await response.json();
+//      pokemonList = data.results;
+//     displayPokemonData(pokemonList)
+//  console.log(pokemonList);
+
+//   }catch(error){
+//     console.log(error);
+//     const container = document.getElementById('container')
+//   }
+//  }
+
+ 
+
+
+
+
+let pokemonList = []
+
+
+async function fetchPokemon () {
   try {
-    const response =await fetch ('https://pokeapi.co/api/v2/pokemon?limit=20');
+    const response = await fetch ('https://pokeapi.co/api/v2/pokemon?limit=100');
     const data = await response.json();
-    const pokemonList = data.results;
+    pokemonList = data.results;
     displayPokemonData(pokemonList)
- console.log(pokemonList);
 
-  }catch(error){
-    console.log(error);
+  }catch(error) {
+console.log(error);
   }
- }
-
- fetchPokemon()
+}
