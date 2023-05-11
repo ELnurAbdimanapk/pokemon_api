@@ -78,14 +78,8 @@ button{
   cursor: pointer;
 
 }
-/* .search{
-  flex: 0.5;
-  height: 50px;
-  background: #ffffff;
-  border: 0;
-  outline: 0;
-  font-size: 18px;
-  color: #333;
-  border-radius: 5px;
-  padding-left: 10px;
-} */
+/* Favorites */
+
+.favorites{
+  margin-bottom: 100px;
+}

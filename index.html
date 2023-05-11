@@ -12,26 +12,29 @@
   <body>
     <header>
       <h1>Pokemon</h1>
-      <button class="favorites"><a href="favorite.html">Favorites</a></button>
+      <button class="favorites">
+        <a href="favorite.html" id="favorites" onclick="favoritePokemon()"
+          >Favorites</a
+        >
+      </button>
       <div class="search-box">
         <div class="row">
           <input
             type="text"
             id="search"
             placeholder="Search Pokemon"
-            oninput=searchPokemon()
+            oninput="searchPokemon()"
             autocomplete="off"
           />
 
           <button class="search">
             <i class="fa-sharp fa-solid fa-magnifying-glass fa-beat"></i>
           </button>
-          <select onchange= sortPokemon() id ="sort" name="select">
-            <option selected disabled value=""> Sort by Alphabet</option>
-            <option value="opt1" >A-Z</option>
+          <select onchange="sortPokemon()" id="sort" name="select">
+            <option selected disabled value="">Sort by Alphabet</option>
+            <option value="opt1">A-Z</option>
             <option value="opt2">Z-A</option>
           </select>
-         
         </div>
       </div>
     </header>
@@ -41,6 +44,7 @@
     <script src="/script/fetch.js"></script>
     <script src="/script/search.js"></script>
     <script src="/script/sort.js"></script>
+    <script src="/script/favorite.js"></script>
     <script
       src="https://kit.fontawesome.com/6d7c112d81.js"
       crossorigin="anonymous"
