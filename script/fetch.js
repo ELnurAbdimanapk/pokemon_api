@@ -4,6 +4,8 @@ function displayPokemonData(pokemonList) {
   pokemonList.forEach((pokemon) => {
     const pokemonName = document.createElement("h2");
     pokemonName.textContent = pokemon.name;
+   
+
 
     const pokemonWrapper = document.createElement("div");
     pokemonWrapper.classList.add("pokemon");
@@ -23,10 +25,9 @@ function displayPokemonData(pokemonList) {
         alert("favorite")
       }
 
+     
 
-
-      
-      
+     
       pokemonWrapper.appendChild(pokemonImage)
 
       pokemonWrapper.appendChild(pokemonName)
