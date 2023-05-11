@@ -4,21 +4,39 @@
     <meta charset="utf-8" />
     <title>Pokemon API</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <header><h1>Pokemon</h1>
-    <button class="search">Search</button>
-    <button class="favorites">Favorites</button>
-    <input type="text" id="search" placeholder="Search Pokemon"/>
-        <button class="search" onclick="searchPokemon()">Search</button>
-</header>
-    <main id="container">
-        
-    </main>
+    <header>
+      <h1>Pokemon</h1>
+      <button class="favorites"><a href="favorite.html">Favorites</a></button>
+      <div class="search-box">
+        <div class="row">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search Pokemon"
+            oninput=searchPokemon()
+            autocomplete="off"
+          />
+
+          <button class="search">
+            <i class="fa-sharp fa-solid fa-magnifying-glass fa-beat"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="container"></main>
 
     <script src="/script/script.js"></script>
     <script src="/script/fetch.js"></script>
     <script src="/script/search.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6d7c112d81.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
-
 </html>

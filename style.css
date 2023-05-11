@@ -15,7 +15,7 @@ header {
   width: 1262px;
   margin: auto;
 }
-
+/* Pokemon */
 .pokemon {
   height: 250px;
   background: #ffffff;
@@ -38,3 +38,54 @@ header {
     text-transform: uppercase;
     margin-right: 400px;
 }
+
+/* Search */
+
+.search-box {
+  width:1262px;
+  background-color: #ffffff;
+  margin: 80px auto 0;
+  border-radius: 5px;
+
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  text-align: center;
+}
+input {
+  flex: 0.5;
+  height: 50px;
+  background: #ffffff;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
+  padding-left: 10px;
+
+}
+button{
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+.fa-solid{
+  width: 25px;
+  color: #555;
+  font-size: 22px;
+  cursor: pointer;
+
+}
+/* .search{
+  flex: 0.5;
+  height: 50px;
+  background: #ffffff;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
+  border-radius: 5px;
+  padding-left: 10px;
+} */

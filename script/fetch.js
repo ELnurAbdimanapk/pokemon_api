@@ -26,6 +26,7 @@ function displayPokemonData(pokemonList) {
 
 
       
+      
       pokemonWrapper.appendChild(pokemonImage)
 
       pokemonWrapper.appendChild(pokemonName)
