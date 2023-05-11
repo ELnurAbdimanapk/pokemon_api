@@ -83,3 +83,8 @@ button{
 .favorites{
   margin-bottom: 100px;
 }
+
+.fa-regular {
+  width: 40px;
+  height: 40px;
+}

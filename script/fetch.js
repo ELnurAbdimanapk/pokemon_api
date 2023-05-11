@@ -1,48 +1,46 @@
 function displayPokemonData(pokemonList) {
+  // Get the container element
   const container = document.getElementById("container");
-  container.innerHTML =""
+  container.innerHTML = "";
+
+  // Iterate over each pokemon in the list
   pokemonList.forEach((pokemon) => {
     const pokemonName = document.createElement("h2");
     pokemonName.textContent = pokemon.name;
-   
-
-
     const pokemonWrapper = document.createElement("div");
     pokemonWrapper.classList.add("pokemon");
-    let pokemonId = 1
-    
     const pokemonImage = document.createElement("img");
+
+    // Fetch
     fetch(pokemon.url)
       .then((response) => response.json())
       .then((data) => {
-         pokemonId = data.held_items.id;
         pokemonImage.src = data.sprites.front_default;
       })
       .catch((error) => console.error(error));
-      
-    
-      const favoriteButton = document.createElement('button');
-    favoriteButton.innerText = "favorites";
+
+    // Файфорит
+    const favoriteButton = document.createElement("button");
+    const favoriteIcon = document.createElement("i");
+    favoriteIcon.className = "fa-regular fa-heart fa-2xl";
+    favoriteButton.appendChild(favoriteIcon);
+
+    // Онклик
     favoriteButton.onclick = function () {
       let favorites = localStorage.getItem("favorites");
       favorites = favorites ? JSON.parse(favorites) : [];
       if (!favorites.includes(pokemon.name)) {
         favorites.push(pokemon.name);
       } else {
-        favorites = favorites.filter(fav => fav !== pokemon.name);
+        favorites = favorites.filter((fav) => fav !== pokemon.name);
       }
-      localStorage.setItem("favorites", JSON.stringify(favorites))
-      
-  
-    }
-      pokemonWrapper.appendChild(pokemonImage)
+      localStorage.setItem("favorites", JSON.stringify(favorites));
+    };
 
-      pokemonWrapper.appendChild(pokemonName)
-      pokemonWrapper.appendChild(favoriteButton)
-
+    // Wrapper
+    pokemonWrapper.appendChild(pokemonImage);
+    pokemonWrapper.appendChild(pokemonName);
+    pokemonWrapper.appendChild(favoriteButton);
     container.appendChild(pokemonWrapper);
   });
 }
-
-
-
