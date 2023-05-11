@@ -14,10 +14,9 @@ function searchPokemon() {
     message.textContent = "Any Pokemon Found";
     pokemonWrapper.appendChild(message)
     container.appendChild(pokemonWrapper);
-    
+
   } else {
     displayPokemonData(filteredPokemon);
   }
 }
 
-fetchPokemon();

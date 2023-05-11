@@ -26,7 +26,12 @@
           <button class="search">
             <i class="fa-sharp fa-solid fa-magnifying-glass fa-beat"></i>
           </button>
-          <button>Sort</button>
+          <select onchange= sortPokemon() id ="sort" name="select">
+            <option selected disabled value=""> Sort by Alphabet</option>
+            <option value="opt1" >A-Z</option>
+            <option value="opt2">Z-A</option>
+          </select>
+         
         </div>
       </div>
     </header>
@@ -35,7 +40,7 @@
     <script src="/script/script.js"></script>
     <script src="/script/fetch.js"></script>
     <script src="/script/search.js"></script>
-    <script src="/script/anypokemon.js"></script>
+    <script src="/script/sort.js"></script>
     <script
       src="https://kit.fontawesome.com/6d7c112d81.js"
       crossorigin="anonymous"
