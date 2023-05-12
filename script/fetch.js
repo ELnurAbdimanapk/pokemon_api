@@ -31,8 +31,11 @@ function displayPokemonData(pokemonList) {
       favorites = favorites ? JSON.parse(favorites) : [];
       if (!favorites.includes(pokemon.name)) {
         favorites.push(pokemon.name);
+        favoriteButton.style.background ="red"
       } else {
         favorites = favorites.filter((fav) => fav !== pokemon.name);
+        favoriteButton.style.background ="transparent"
+
       }
       localStorage.setItem("favorites", JSON.stringify(favorites));
     };
