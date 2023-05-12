@@ -105,3 +105,16 @@ button{
 #pagination button:active{
   background-color: #b1acac;
 }
+.remove{
+  background-color: #555;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  color: #fff;
+}
+.remove:hover{
+  background-color: #a5a3a3;
+}
+.remove:active{
+  background-color: #555;
+}

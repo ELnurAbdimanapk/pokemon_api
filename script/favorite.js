@@ -17,7 +17,15 @@ window.onload = function () {
         pokemonName.textContent = pokemon.name;
         pokemonWrapper.appendChild(pokemonName);
         favoriteContainer.appendChild(pokemonWrapper);
-
+// Remove
+        const remove = document.createElement('button')
+        remove.textContent ="remove"
+        remove.className ="remove"
+        remove.onclick=function () {
+          this.parentNode.remove()
+          
+        }
+        pokemonWrapper.appendChild(remove)
         
 
         
