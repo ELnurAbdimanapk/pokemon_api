@@ -118,3 +118,23 @@ button{
 .remove:active{
   background-color: #555;
 }
+
+.favorites{
+  background-color: #555;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  color: #fff;
+  margin: auto;
+}
+#favorites{
+  text-decoration: none;
+  color: #fff;
+
+}
+.favorites:hover{
+  background-color: #a5a3a3;
+}
+.favorites:active{
+  background-color: #555;
+}
