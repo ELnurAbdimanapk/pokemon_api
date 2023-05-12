@@ -19,5 +19,3 @@ function searchPokemon() {
     displayPokemonData(filteredPokemon);
   }
 }
-
-fetchPokemon();

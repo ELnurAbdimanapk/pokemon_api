@@ -15,6 +15,10 @@ header {
   width: 1262px;
   margin: auto;
 }
+.container {
+  width: 1262px;
+  margin: auto;
+}
 /* Pokemon */
 .pokemon {
   height: 250px;
@@ -89,3 +93,15 @@ button{
   height: 40px;
   background-color: aqua;
 } */
+#pagination button{
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  background-color:#555;
+}
+#pagination button:hover{
+  background-color: #fff;
+}
+#pagination button:active{
+  background-color: #b1acac;
+}

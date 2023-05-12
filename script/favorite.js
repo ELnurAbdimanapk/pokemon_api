@@ -17,7 +17,14 @@ window.onload = function () {
         pokemonName.textContent = pokemon.name;
         pokemonWrapper.appendChild(pokemonName);
         favoriteContainer.appendChild(pokemonWrapper);
+
+        
+
+        
       })
       .catch((error) => console.error(error));
   });
+
+  
 };
+
